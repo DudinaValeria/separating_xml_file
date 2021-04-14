@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 import urllib
 
 
-path= urllib.request.urlopen("https://files.sima-land.ru/mav.xml")
+path= urllib.request.urlopen("pathtofile")
 
 tree = ET.ElementTree(file=path)
 root = tree.getroot()
@@ -97,7 +97,7 @@ for no in range(num):
                     
                 root3.remove(q)
 
-    file_name="/home/bitrix/www/upload/partners/simaland/simaland_"+str(no)+".xml"
+    file_name=""+str(no)+".xml"
     
    
     a_tree = xml.ElementTree(a_root)
